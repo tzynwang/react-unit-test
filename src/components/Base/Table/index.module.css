@@ -1,0 +1,9 @@
+.table {
+  width: 100%;
+}
+
+.tableHeaderDefault,
+.tableRowDefault {
+  display: flex;
+  height: 36px;
+}
