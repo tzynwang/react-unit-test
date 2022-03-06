@@ -1,0 +1,3 @@
+.zebraRow:nth-child(even) {
+  background-color: #eeffee;
+}
