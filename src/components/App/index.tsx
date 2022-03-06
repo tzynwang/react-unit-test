@@ -1,11 +1,23 @@
-import React, { memo } from 'react';
+import React, { memo } from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
+
+import SideList from '@Components/Common/SideList'
+import MainContent from '@Components/Common/MainContent'
+import Styles from './index.module.css'
 
 function App(): React.ReactElement {
   return (
-    <main>
-      Hello world, this react app is created by <code>npx create-react-app with template --choffee</code>.
-    </main>
-  );
+    <Router>
+      <div className={Styles.container}>
+        <div className={Styles.side}>
+          <SideList />
+        </div>
+        <div className={Styles.main}>
+          <MainContent />
+        </div>
+      </div>
+    </Router>
+  )
 }
 
-export default memo(App);
+export default memo(App)
